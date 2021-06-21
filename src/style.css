@@ -1,0 +1,94 @@
+* {
+  font-family: "Rubik", sans-serif;
+}
+footer {
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
+}
+#search {
+  background-image: url("../images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#search form {
+  display: block;
+  width: 550px;
+  margin: 30px auto 0 auto;
+}
+#search form input {
+  width: 80%;
+  border-color: transparent;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 10px;
+}
+#search form button {
+  width: 10%;
+  height: 50px;
+  color: white;
+  background-color: rgb(41, 41, 41);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  font-weight: 700;
+}
+#result {
+  border-radius: 15px;
+  position: relative;
+  bottom: -80px;
+}
+#result h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* #search {
+  background-color: blue;
+}
+#search h1 {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+#result {
+  display: block;
+  position: relative;
+  bottom: -100px;
+  background-color: white;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+#result section {
+  display: inline-block;
+  width: 20%;
+  padding: 20px;
+}
+#result h2 {
+  font-size: 15px;
+  color: gray;
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+#result p {
+  font-size: 20px;
+  text-align: center;
+  margin: 40px 0;
+}
+.hasBorder {
+  border-right: gray 1px solid;
+} */
