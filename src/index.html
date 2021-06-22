@@ -53,15 +53,33 @@
   </head>
   <body>
     <div id="root">Not rendered</div>
+    <div id="mapid"></div>
 
     <footer>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Aryaman Rishabh</a>.
       </div>
     </footer>
+    <script>
+      var mymap = L.map("mapid").setView([51.505, -0.09], 13);
+      L.tileLayer(
+        "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXJ5YW1hbnJpc2hhYmgiLCJhIjoiY2txNnk1MGswMDB1ajJvcGIzeW51ODRnZiJ9._kUyks93ZMa3y4CDnFlv8A",
+        {
+          attribution:
+            'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 18,
+          id: "mapbox/streets-v11",
+          tileSize: 512,
+          zoomOffset: -1,
+          accessToken:
+            "pk.eyJ1IjoiYXJ5YW1hbnJpc2hhYmgiLCJhIjoiY2txNnk1MGswMDB1ajJvcGIzeW51ODRnZiJ9._kUyks93ZMa3y4CDnFlv8A",
+        }
+      ).addTo(mymap);
+      var marker = L.marker([51.5, -0.09]).addTo(mymap);
+    </script>
     <script src="App.js"></script>
   </body>
 </html>
